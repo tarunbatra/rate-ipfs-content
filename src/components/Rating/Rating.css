@@ -1,0 +1,7 @@
+.rating {
+  padding: 20px;
+  height: 50px;
+}
+.rating span {
+  font-size: large;
+}
