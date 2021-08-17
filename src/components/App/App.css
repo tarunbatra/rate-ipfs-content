@@ -31,11 +31,14 @@
   color: #6727cf;
   margin: 0 auto;
 }
+.App p {
+  max-width: 90%;
+}
 
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  margin-bottom: 10px;
 }

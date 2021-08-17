@@ -16,7 +16,7 @@ function App() {
       <CIDForm />
 
       <footer>
-        <p>© Tarun Batra | Home | About this site | Contact me</p>
+        <sub>© Tarun Batra</sub>
       </footer>
     </div>
   );

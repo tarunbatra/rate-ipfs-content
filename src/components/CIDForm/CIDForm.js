@@ -6,6 +6,7 @@ import Rating from '../Rating/Rating';
 export default function CIDForm (props) {
   const [cid, setCid] = useState('');
   const [providers, setProviders] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (!global.ipfs) {
@@ -20,13 +21,16 @@ export default function CIDForm (props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true)
     try {
       setProviders([])
       const peers = await global.ipfs.getSources(cid)
       setProviders(peers)
+      setLoading(false)
     } catch (err) {
       console.error('Error in getting sources', err)
       alert('Oops! Something went wrong.')
+      setLoading(false)
     }
   }
   return (
@@ -35,7 +39,7 @@ export default function CIDForm (props) {
       <input className='cidInput' placeholder='Enter CID' type='text' value={cid} onChange={e => setCid(e.target.value)} />
       <input className='cidBtn' type='submit' value='Check'/>
     </form>
-    <Rating providers={providers} />
+    <Rating providers={providers} loading={loading} />
     </div>
   );
 }

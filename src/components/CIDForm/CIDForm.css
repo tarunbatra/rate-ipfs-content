@@ -1,11 +1,22 @@
 .cidForm {
   display: flex;
   justify-content: space-between;
-  min-width: 400px;
+  min-width: 200px;
   width: 800px;
   padding: 10px;
 }
 
 .cidInput {
   width: 90%;
+}
+@media only screen and (max-width: 800px) {
+  .cidForm {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cidForm {
+    width: 200px;
+  }
 }

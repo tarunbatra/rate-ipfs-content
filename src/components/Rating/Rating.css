@@ -1,7 +1,9 @@
 .rating {
+  display: flex;
+  justify-content: center;
   padding: 20px;
-  height: 50px;
+
 }
 .rating span {
-  font-size: large;
+  font-size: xx-large;
 }
