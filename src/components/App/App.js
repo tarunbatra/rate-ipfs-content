@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-no-target-blank */
 import './App.css';
 import CIDForm from '../CIDForm/CIDForm';
 import { getRandomBetween } from '../../lib/utils';
 import { useEffect, useState } from 'react'
-
+import info from '../../../package.json'
 const titles = [
   'de-centralized ?',
   'p2p ?',
@@ -40,8 +41,9 @@ function App() {
 
       <footer>
         <sub>
-          { /* eslint-disable-next-line react/jsx-no-target-blank */ }
-          © {new Date().getFullYear()} <a href='https://tarunbatra.com' target='_blank' rel='author'>Tarun Batra</a>
+          © {new Date().getFullYear()} <a href='https://tarunbatra.com' target='_blank' rel='author'>Tarun Batra</a>&nbsp;
+          | v{info.version}&nbsp;
+          | <a href={info.repository} target='_blank' rel=''>Source code</a>&nbsp;
         </sub>
       </footer>
     </div>

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Rate IPFS content",
+  "name": "Rate IPFS content",
   "icons": [
     {
       "src": "favicon.ico",

@@ -16,6 +16,9 @@
   max-width: 60%;
 }
 
+.App a {
+  color: white;
+}
 
 .main {
   flex: 1;
@@ -42,6 +45,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  font-size: smaller;
 }
 
 @media only screen and (max-width: 400px) {
