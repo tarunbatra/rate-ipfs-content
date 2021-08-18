@@ -7056,7 +7056,7 @@ ipfs-core-utils@^0.10.1:
     timeout-abort-controller "^1.1.1"
     uint8arrays "^2.1.6"
 
-ipfs-core@^0.10.0:
+ipfs-core@^0.10.3:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/ipfs-core/-/ipfs-core-0.10.3.tgz#1ea0a701b2b0709c2f496617bea21a3a5f833e32"
   integrity sha512-OjoyaB1Uu7cyXDFjvGWV8R7wzAo9p+aiKMNuYAZk8Ilmo2JcXSGoLEGPjdkIOJsADqOvxtC8cAfptc3tE4V8bA==
