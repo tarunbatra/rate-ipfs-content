@@ -26,11 +26,11 @@ export default class IpfsLib {
 		console.log(`Collecting datapoints of the content for cid: ${cid}...`)
 		const data = this.ipfsInstance.ls(input, {});
 		let dataPoints = 0;
-		const timeout = createTimeout(1120)
+		const timeout = createTimeout(2 * 60) // timeout of 2 minutes
 		for await (let d of data) {
-			console.log(`Got datapoint #${dataPoints} for cid: ${cid}`, d)
 			dataPoints++;
-			if (dataPoints >= 500) {
+			console.log(`Got datapoint #${dataPoints} for cid: ${cid}`, d)
+			if (dataPoints >= 50) {
 				console.log(`Enough datapoints collected for cid: ${cid}`)
 				break;
 			} else if (timeout.triggered) {
