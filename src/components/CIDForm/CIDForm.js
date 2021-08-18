@@ -37,7 +37,7 @@ export default function CIDForm (props) {
     <div>
     <form className='cidForm' onSubmit={handleSubmit}>
       <input className='cidInput' placeholder='Enter CID' type='text' value={cid} onChange={e => setCid(e.target.value)} />
-      <input className='cidBtn' type='submit' value='Check'/>
+      <input className='cidBtn' type='submit' value='Check' disabled={loading} />
     </form>
     <Rating providers={providers} loading={loading} />
     </div>
