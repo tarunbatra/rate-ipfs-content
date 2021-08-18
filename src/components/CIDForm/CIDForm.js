@@ -1,5 +1,5 @@
 import './CIDForm.css'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import IpfsLib from '../../lib/ipfs';
 import Rating from '../Rating/Rating';
 
