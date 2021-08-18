@@ -12,6 +12,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App p {
+  max-width: 60%;
+}
+
 
 .main {
   flex: 1;
@@ -31,9 +35,6 @@
   color: #6727cf;
   margin: 0 auto;
 }
-.App p {
-  max-width: 90%;
-}
 
 footer {
   display: flex;
@@ -41,4 +42,10 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .App p {
+    max-width: 90%;
+  }
 }
